@@ -1,0 +1,50 @@
+By naming convention, bash scripts end with .sh. However, bash scripts can run perfectly fine without the sh extension.
+
+Adding the Shebang:
+
+Bash scripts start with a shebang. Shebang is a combination of bash # and bang ! followed by the bash shell path. This is the first line of the script. Shebang tells the shell to execute it via bash shell. Shebang is simply an absolute path to the bash interpreter.
+
+
+Below is an example of the shebang statement.
+
+#!/bin/bash
+
+
+You can find your bash shell path (which may vary from the above) using the command:
+
+which bash
+
+
+Creating our first bash script:
+
+Create a file named run_all.sh using the vi command. You can use any editor of your choice.
+
+vi run_all.sh
+
+Add the following commands in your file and save it:
+
+#!/bin/bash
+echo "Today is " `date`
+
+echo -e "\nenter the path to directory"
+read the_path
+
+echo -e "\n you path has the following files and folders: "
+ls $the_path
+
+example2:
+
+  1#!/bin/bash
+  2 echo "Today is " `date`
+  3
+  4 echo -e "\nenter the path to directory"
+  5 read the_path
+  6
+  7 echo -e "\n you path has the following files and folders: "
+  8 ls $the_path
+Line #1: The shebang (#!/bin/bash) points toward the bash shell path.
+Line #2: The echo command is displaying the current date and time on the terminal. Note that the date is in backticks.
+Line #4: We want the user to enter a valid path.
+Line #5: The read command reads the input and stores it in the variable the_path.
+line #8: The ls command takes the variable with the stored path and displays the current files and folders.
+ 
