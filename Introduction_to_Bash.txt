@@ -1,0 +1,30 @@
+A bash script is a file containing a sequence of commands that are executed by the bash program line by line
+
+Overview of Bash shell and command line interface
+
+The term "shell" refers to a program that provides a command-line interface for interacting with an operating system. Bash (Bourne-Again SHell) is one of the most commonly used Unix/Linux shells and is the default shell in many Linux distributions.
+
+When a shell is used interactively, it displays a $ when it is waiting for a command from the user.
+
+If the shell is running as root (a user with administrative rights), the prompt is changed to #. The superuser shell prompt looks like this:
+
+[root@host ~]#
+
+Although Bash is a type of shell, there are other shells available as well, such as Korn shell (ksh), C shell (csh), and Z shell (zsh). Each shell has its own syntax and set of features, but they all share the common purpose of providing a command-line interface for interacting with the operating system.
+
+You can determine your shell type using the ps command:
+
+ps
+
+Generally, commands follow this syntax:
+
+command [OPTIONS] arguments
+
+few basic bash commands:
+
+date  : Displays the current date
+pwd   : Displays the present working directory
+ls    : Lists the contents of the current directory.
+echo  : Prints a string of text, or value of a variable to the terminal.
+
+
